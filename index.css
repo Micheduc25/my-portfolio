@@ -39,6 +39,8 @@
   --green: #109e92;
   --white: #f0e9f2;
   --white-1: #e5e5e6da;
+  --empty-color: #eee;
+  --color: #00ff00;
 
   --container-max-width: 1180px;
   --container-normal-width: 800px;
@@ -113,6 +115,33 @@ section {
 img {
   object-fit: contain;
   max-width: 100%;
+}
+
+.level {
+  width: 350px;
+  height: 28px;
+  padding: 5px;
+  background-color: var(--empty-color);
+  position: relative;
+}
+
+.level .indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--green);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media only screen and (max-width: 360px) {
+  .level {
+    width: 300px;
+  }
 }
 
 /* --------------------------------------- */
@@ -561,6 +590,23 @@ body:not(.user-is-tabbing) a:focus {
     flex: 1;
     margin: 0 var(--gutter-huge) 0 0;
   }
+}
+
+/* --------------------------------------- */
+/* ----- Skills ----- */
+/* --------------------------------------- */
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill__item {
+  margin-bottom: 40px;
+}
+
+.skill__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /* --------------------------------------- */
