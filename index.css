@@ -34,6 +34,9 @@
   --line-height-normal: 1.7;
   --line-height-small: 1.2;
 
+  /*   specify the number of tabs below */
+  --num-tabs: 2;
+
   --black: #000;
   --pink: #ff3258;
   --green: #109e92;
@@ -532,6 +535,67 @@ body:not(.user-is-tabbing) a:focus {
   .work__code {
     height: 4rem;
   }
+}
+
+.tabbar-view {
+  /* width: 70%;
+  margin: 15px auto;
+
+  min-height: 100vh; */
+}
+
+.tab-bar {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+.tab-bar ul {
+  display: flex;
+}
+
+.tab-bar ul li {
+  width: calc(calc(1 / var(--num-tabs)) * 100%);
+  padding: 15px 25px;
+  background-color: #111;
+  border-bottom: 2.5px solid #aaa;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tab-bar ul li:not(:last-child) {
+  border-right: 1px solid #555;
+}
+
+.tab-bar .indicator {
+  position: absolute;
+  width: calc(calc(1 / var(--num-tabs)) * 100%);
+  height: 5px;
+  background-color: var(--green);
+  left: 0;
+  bottom: 0px;
+  transition: 0.2s;
+}
+
+.tab-view {
+  padding-top: 30px;
+}
+
+.tab-view__item {
+  display: none;
+  opacity: 0;
+  transition: 0.3s;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-view__item.active {
+  display: flex;
+  opacity: 1;
 }
 
 /* --------------------------------------- */

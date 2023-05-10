@@ -13,7 +13,7 @@
 
     <meta
       name="keywords"
-      content="Ndjock Michel Junior, web developer, react, vue, next, nuxt, node, express, python, Django, Javascript, web developer portfolio, web developer portfolio examples, 
+      content="Ndjock Michel Junior, web developer, react, vue, flutter, mobile, application, next, nuxt, node, express, python, Django, Javascript, web developer portfolio, web developer portfolio examples, 
       web developer portfolio inspiration, web developer portfolio websites, 
       web developer portfolio projects, web developer portfolio skills, web developer portfolio tips, 
       web developer portfolio design, web developer portfolio ideas, web developer portfolio templates, 
@@ -71,8 +71,8 @@
 
               <p>
                 I am web developer with a passion for creating beautiful and
-                functional websites. I have experience in HTML, CSS, JavaScript,
-                React, Vue.js, Node.js and Django, and I love learning new
+                functional websites and mobile applications. I have experience in HTML, CSS, JavaScript,
+                React, Vue.js, Flutter, Node.js and Django, and I love learning new
                 technologies and frameworks. Whether you need a landing page, a
                 blog, an e-commerce site, or anything in between, I can help you
                 turn your vision into reality. Check out my portfolio to see
@@ -147,6 +147,15 @@
               </div>
             </div>
 
+            <div class="skill__item">
+              <h3 class="skill__title">
+                Flutter
+              </h3>
+              <div class="level">
+                <div style="width:90%;" class="indicator">9/10</div>
+              </div>
+            </div>
+
 
             <div class="skill__item">
               <h3 class="skill__title">
@@ -201,147 +210,284 @@
       <section class="work" id="work">
         <div class="row">
           <h2>My Work</h2>
-          <div class="work__boxes">
 
-            <div class="work__box">
-              <div class="work__text">
-                <h3>3D Card Gallery</h3>
-                <p>A beautiful website where one can see a collection of 3D cards</p>
-                <ul class="work__list">
-                    <li>React</li>
-                    <li>Next.js</li>
-                    <li>Three.js</li>
-                  </ul>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://3-d-card-gallery.vercel.app/"
-                    target="_blank"
-                    class="link__text"
-                    rel="noopener"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/Micheduc25/3D-Card-Gallery"
-                    title="View Source Code"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/cards-gallery.jpg"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
+          <div class="tabbar-view">
+            <div class="tab-bar">
+              <ul>
+                <li onclick="selectTab(0)" class="tab-bar__item">Web Projects</li>
+                <li onclick="selectTab(1)" class="tab-bar__item">Mobile Projects</li>
+              </ul>
+              <div class="indicator"></div>
             </div>
+            
+            <div class="tab-view">
+              
+                <div class="tab-view__item active">
 
-            <div class="work__box">
-              <div class="work__text">
-                <h3>MadTech Website</h3>
-                <p>
-                  A beautiful and modern website for a tech company
-                </p>
-                <ul class="work__list">
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Javscript</li>
-                </ul>
+                        
+                <div class="work__boxes">
 
-                <div class="work__links">
-                  <a href="https://madtech.vercel.app/ " target="_blank" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="https://github.com/Micheduc25/madtech-website" target="_blank">
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
+                  <div class="work__box">
+                    <div class="work__text">
+                      <h3>3D Card Gallery</h3>
+                      <p>A beautiful website where one can see a collection of 3D cards</p>
+                      <ul class="work__list">
+                          <li>React</li>
+                          <li>Next.js</li>
+                          <li>Three.js</li>
+                        </ul>
+                      </ul>
+
+                      <div class="work__links">
+                        <a
+                          href="https://3-d-card-gallery.vercel.app/"
+                          target="_blank"
+                          class="link__text"
+                          rel="noopener"
+                        >
+                          Visit Site <span>&rarr;</span>
+                        </a>
+                        <a
+                          href="https://github.com/Micheduc25/3D-Card-Gallery"
+                          title="View Source Code"
+                          target="_blank"
+                        >
+                          <img
+                            src="./images/github.svg"
+                            class="work__code"
+                            alt="GitHub"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="work__image-box">
+                      <img
+                        src="./images/cards-gallery.jpg"
+                        class="work__image"
+                        alt="Project 1"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="work__box">
+                    <div class="work__text">
+                      <h3>MadTech Website</h3>
+                      <p>
+                        A beautiful and modern website for a tech company
+                      </p>
+                      <ul class="work__list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javscript</li>
+                      </ul>
+
+                      <div class="work__links">
+                        <a href="https://madtech.vercel.app/ " target="_blank" class="link__text">
+                          Visit Site <span>&rarr;</span>
+                        </a>
+                        <a href="https://github.com/Micheduc25/madtech-website" target="_blank">
+                          <img
+                            src="./images/github.svg"
+                            class="work__code"
+                            title="View Source Code"
+                            alt="GitHub"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="work__image-box">
+                      <img
+                        src="./images/madtech-website.jpg"
+                        class="work__image"
+                        alt="Mad tech website"
+                      />
+                    </div>
+                  </div>
+                  <div class="work__box">
+                    <div class="work__text">
+                      <h3>Screel Platform</h3>
+                      <p>
+                        A platform for tech enthusiasts and developers to come together and connect.
+                      </p>
+                      <ul class="work__list">
+                        <li>Javascript</li>
+                        <li>Vue.js</li>
+                        <li>Tailwind CSS</li>
+                      </ul>
+
+                      <div class="work__links">
+                        <a href="https://screel.vercel.app/ " target="_blank" class="link__text">
+                          Visit Site <span>&rarr;</span>
+                        </a>
+                        <a href="https://github.com/Micheduc25/screel" target="_blank">
+                          <img
+                            src="./images/github.svg"
+                            class="work__code"
+                            title="View Source Code"
+                            alt="GitHub"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="work__image-box">
+                      <img
+                        src="./images/screel.jpg"
+                        class="work__image"
+                        alt="Mad tech website"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="work__box">
+                    <div class="work__text">
+                      <h3>Equatorial OS Website</h3>
+                      <p>
+                        A website for an oil and gas company
+                      </p>
+                      <ul class="work__list">
+                        <li>WordPress</li>
+                        <li>PHP</li>
+                        <li>Javascript</li>
+                      </ul>
+
+                      <div class="work__links">
+                        <a href="https://equatorial-os.com/" target="_blank" class="link__text">
+                          Visit Site <span>&rarr;</span>
+                        </a>
+                        
+                      </div>
+                    </div>
+                    <div class="work__image-box">
+                      <img
+                        src="./images/eq-os website.jpg"
+                        class="work__image"
+                        alt="Project 3"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/madtech-website.jpg"
-                  class="work__image"
-                  alt="Mad tech website"
-                />
-              </div>
-            </div>
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Screel Platform</h3>
-                <p>
-                  A platform for tech enthusiasts and developers to come together and connect.
-                </p>
-                <ul class="work__list">
-                  <li>Javascript</li>
-                  <li>Vue.js</li>
-                  <li>Tailwind CSS</li>
-                </ul>
-
-                <div class="work__links">
-                  <a href="https://screel.vercel.app/ " target="_blank" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="https://github.com/Micheduc25/screel" target="_blank">
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
+                        
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/screel.jpg"
-                  class="work__image"
-                  alt="Mad tech website"
-                />
-              </div>
-            </div>
 
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Equatorial OS Website</h3>
-                <p>
-                  A website for an oil and gas company
-                </p>
-                <ul class="work__list">
-                  <li>WordPress</li>
-                  <li>PHP</li>
-                  <li>Javascript</li>
-                </ul>
 
-                <div class="work__links">
-                  <a href="https://equatorial-os.com/" target="_blank" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  
+                <div class="tab-view__item ">
+
+                  <div class="work__boxes">
+
+                    <div class="work__box">
+                      <div class="work__text">
+                        <h3>Find Home</h3>
+                        <p>A beautiful mobile application to help people locate and book rooms and houses</p>
+                        <ul class="work__list">
+                            <li>Dart</li>
+                            <li>Flutter</li>
+                            <li>Firebase</li>
+                          </ul>
+                        </ul>
+  
+                        <div class="work__links">
+                          <a
+                            href="https://play.google.com/store/apps/details?id=com.dopetech.home_finder"
+                            target="_blank"
+                            class="link__text"
+                            rel="noopener"
+                          >
+                            Visit App <span>&rarr;</span>
+                          </a>
+                          <a
+                            href="https://github.com/innovcmr/Find-Home/"
+                            title="View Source Code"
+                            target="_blank"
+                          >
+                            <img
+                              src="./images/github.svg"
+                              class="work__code"
+                              alt="GitHub"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="work__image-box">
+                        <img
+                          src="./images/find-home.jpg"
+                          class="work__image"
+                          alt="Project 1"
+                        />
+                      </div>
+                    </div>
+  
+
+                    <div class="work__box">
+                      <div class="work__text">
+                        <h3>BMI Calculator</h3>
+                        <p>A simple but beautiful Body mass index calculator app</p>
+                        <ul class="work__list">
+                            <li>Dart</li>
+                            <li>Flutter</li>
+                            
+                          </ul>
+                        </ul>
+  
+                        <div class="work__links">
+                          <a
+                            href="https://play.google.com/store/apps/details?id=com.micheduc25.bmicalculator&gl=US"
+                            target="_blank"
+                            class="link__text"
+                            rel="noopener"
+                          >
+                            Visit App <span>&rarr;</span>
+                          </a>
+                         
+                        </div>
+                      </div>
+                      <div class="work__image-box">
+                        <img
+                          src="./images/bmi calculator.jpg"
+                          class="work__image"
+                          alt="Project 1"
+                        />
+                      </div>
+                    </div>
+                    <div class="work__box">
+                      <div class="work__text">
+                        <h3>BlueByte</h3>
+                        <p>An application to put measurements on images of buildings or furniture</p>
+                        <ul class="work__list">
+                            <li>Dart</li>
+                            <li>Flutter</li>
+                            <li>SQlite</li>
+                            
+                          </ul>
+                        </ul>
+  
+                        <div class="work__links">
+                          <a
+                            href="https://apkpure.com/bluebyte/nashma.com.bluebyte"
+                            target="_blank"
+                            class="link__text"
+                            rel="noopener"
+                          >
+                            Visit App <span>&rarr;</span>
+                          </a>
+                         
+                        </div>
+                      </div>
+                      <div class="work__image-box">
+                        <img
+                          src="./images/bluebyte.jpg"
+                          class="work__image"
+                          alt="Project 1"
+                        />
+                      </div>
+                    </div>
+  
+                  </div>
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/eq-os website.jpg"
-                  class="work__image"
-                  alt="Project 3"
-                />
-              </div>
+             
             </div>
+            
           </div>
+
         </div>
       </section>
 
@@ -390,7 +536,7 @@
         <h2>Get in Touch</h2>
         <div class="contact__info">
           <p>
-            Are you looking for a fast-performing and user-friendly website to
+            Are you looking for a fast-performing and user-friendly website or mobile application to
             represent your product or business? or looking for any kind of
             consultation? or want to ask questions? or have some advice for me
             or just want to say "Hi 👋" in any case feel free to Let me know. I
