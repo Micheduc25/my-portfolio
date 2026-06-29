@@ -20,9 +20,9 @@ const SITE = "https://micheduc25.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "Ndjock Michel Junior — Senior Full-Stack Engineer & Educator",
+  title: "Ndjock Michel Junior — Full-Stack Engineer & Educator",
   description:
-    "Senior full-stack engineer (JavaScript/TypeScript, Flutter, Python) and software-engineering educator based in Bamenda, Cameroon. Open to senior and remote roles.",
+    "Full-stack engineer (JavaScript/TypeScript, Flutter, Python) and software-engineering educator based in Yaoundé, Cameroon. Open to new roles, remote or on-site.",
   keywords: [
     "Ndjock Michel Junior",
     "full-stack engineer",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Next.js",
     "Flutter",
     "Python",
-    "Bamenda",
+    "Yaoundé",
     "Cameroon developer",
     "remote engineer",
   ],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE,
-    title: "Ndjock Michel Junior — Senior Full-Stack Engineer & Educator",
+    title: "Ndjock Michel Junior — Full-Stack Engineer & Educator",
     description:
       "Builds web and mobile software across JS/TS, Flutter and Python — and teaches the people who build it.",
     siteName: "Ndjock Michel Junior",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ndjock Michel Junior — Senior Full-Stack Engineer & Educator",
+    title: "Ndjock Michel Junior — Full-Stack Engineer & Educator",
     description:
       "Builds web and mobile software across JS/TS, Flutter and Python — and teaches the people who build it.",
     creator: "@micheduc25",

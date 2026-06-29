@@ -30,7 +30,7 @@ export default function Hero() {
     <section className="hero pad" id="hero" data-sec="00">
       <div className="hero__over">
         // PORTFOLIO · BUILD 2026 ·{" "}
-        <span className="live">STATUS: OPEN TO SENIOR / REMOTE ROLES</span>
+        <span className="live">STATUS: OPEN TO NEW ROLES — REMOTE OR ON-SITE</span>
       </div>
       <h1>
         <span className="ln1">{name}</span>
@@ -39,7 +39,7 @@ export default function Hero() {
         </span>
       </h1>
       <p className="hero__sub">
-        I build software for a living and <b>teach the people who build it</b>. Senior full-stack
+        I build software for a living and <b>teach the people who build it</b>. Full-stack
         engineer across JavaScript/TypeScript, Flutter and Python — shipping web &amp; mobile from
         first commit to production.
       </p>
@@ -50,7 +50,7 @@ export default function Hero() {
         </div>
         <div className="hero__cell">
           <div className="lbl">Based</div>
-          <div className="val">Bamenda, Cameroon</div>
+          <div className="val">Yaoundé, Cameroon</div>
         </div>
         <div className="hero__cell">
           <div className="lbl">Core</div>

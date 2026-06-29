@@ -61,7 +61,7 @@ export default function Home() {
               <span className="dual__tag">[ ENGINEER ]</span>
               <h3>Ships products, not demos.</h3>
               <p>
-                Six-plus years turning vague ideas into working web and mobile software. Landing
+                A track record of turning vague ideas into working web and mobile software. Landing
                 pages, dashboards, e-commerce, real-time apps — front to back, design to deploy.
               </p>
               <p>
@@ -125,7 +125,7 @@ export default function Home() {
                 production reality into something a room of students can actually use.
               </p>
               <p style={{ marginTop: 18 }}>
-                That feedback loop is my edge: a senior who can lead, document, onboard and lift a
+                That feedback loop is my edge: an engineer who can lead, document, onboard and lift a
                 team, not only push commits. The clearest engineers are the ones who&apos;ve had to
                 teach.
               </p>
@@ -162,18 +162,18 @@ export default function Home() {
               <em>BUILD</em> IT.
             </h2>
             <p className="contact__sub">
-              Hiring for a senior or remote role, need a product shipped, or want a guest lecturer /
-              mentor? The fastest path is email — I reply quickly.
+              Got a role to fill, a product to ship, or need a guest lecturer / mentor? The fastest
+              path is email — I reply quickly.
             </p>
             <div className="contact__grid">
               <div className="cline">
                 <div className="lbl">Email</div>
-                <a href="mailto:contact@ndjockcodes.com">contact@ndjockcodes.com</a>
+                <a href="mailto:ndjockjunior@gmail.com">ndjockjunior@gmail.com</a>
               </div>
               <div className="cline">
                 <div className="lbl">Status</div>
                 <span className="v" style={{ color: "var(--accent)" }}>
-                  ● Open to senior / remote roles
+                  ● Open to new roles — remote or on-site
                 </span>
               </div>
               <div className="cline">
@@ -199,7 +199,7 @@ export default function Home() {
             © 2026 <b>NDJOCK MICHEL JUNIOR</b> — HANDCODED, NO TEMPLATES
           </div>
           <div>
-            BAMENDA · CM &nbsp;//&nbsp; <a href="#top">↑ BACK TO TOP</a>
+            YAOUNDÉ · CM &nbsp;//&nbsp; <a href="#top">↑ BACK TO TOP</a>
           </div>
         </div>
       </div>
