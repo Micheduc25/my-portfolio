@@ -11,30 +11,30 @@ const TICKER = [
 const SERVICES: { tag: string; title: string; body: string; points: string[] }[] = [
   {
     tag: "[ 01 / AI SOLUTIONS ]",
-    title: "AI-driven products and automation.",
+    title: "Custom AI tools and automation.",
     body:
-      "We design and build software with AI at its core: assistants that know your business, document and data processing, and workflows that run themselves.",
+      "We build AI assistants, document processing and automated workflows around how your business already works, and connect them to the systems you use.",
     points: ["Custom AI assistants & chatbots", "Document & data extraction", "Workflow automation", "LLM integration into existing apps"],
   },
   {
     tag: "[ 02 / AI TRAINING ]",
-    title: "Teams that know how to use AI.",
+    title: "AI training for your team.",
     body:
-      "Hands-on training for companies, institutions and developer teams. People leave able to use AI tools safely and productively in their daily work, not just talk about them.",
+      "Practical training for companies, schools and developer teams. Each session is built around your team's real tasks, so people leave knowing which tools to use and how to use them safely.",
     points: ["AI for professionals & executives", "AI for developers", "Prompting & tool workflows", "On-site or remote sessions"],
   },
   {
     tag: "[ 03 / SOFTWARE ]",
-    title: "Web and mobile, design to deploy.",
+    title: "Web and mobile apps.",
     body:
-      "Full-stack product development: landing pages, dashboards, e-commerce and real-time apps on the web, Flutter apps on mobile.",
+      "Websites, dashboards, e-commerce and real-time apps on the web, and Flutter apps for Android and iOS. We handle design, development and deployment.",
     points: ["Web apps & websites", "Mobile apps (Android / iOS)", "APIs & backends", "Maintenance & hosting"],
   },
   {
     tag: "[ 04 / CONSULTING ]",
-    title: "Know where AI pays off.",
+    title: "AI consulting.",
     body:
-      "Before you build, we help you find the processes where AI saves real time or money, and plan a rollout your team can actually adopt.",
+      "We look at how your team works, find the tasks where AI can save time or money, and plan how to roll it out.",
     points: ["AI readiness assessment", "Use-case discovery", "Tool & vendor selection", "Rollout roadmap"],
   },
 ];
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="sec-head pad">
             <div className="sec-num">§01</div>
             <div className="sec-title">services</div>
-            <div className="sec-meta">ls ./services<br />4 ways we help</div>
+            <div className="sec-meta">ls ./services<br />4 services</div>
           </div>
           <div className="svc">
             {SERVICES.map((s) => (
@@ -106,8 +106,7 @@ export default function Home() {
             ))}
           </div>
           <div className="creed rv">
-            We build AI into software and teach people to work with it.{" "}
-            <b>The technology only pays off when your team can use it.</b>
+            We build AI tools <b>and</b> train the people who will use them.
           </div>
         </section>
 
@@ -115,7 +114,7 @@ export default function Home() {
           <div className="sec-head pad">
             <div className="sec-num">§02</div>
             <div className="sec-title">capabilities</div>
-            <div className="sec-meta">no buzzword bingo.<br />just what we ship with</div>
+            <div className="sec-meta">tools and languages<br />we work with</div>
           </div>
           {STACK.map((row) => (
             <div className="stack__row rv" key={row.k}>
@@ -138,18 +137,18 @@ export default function Home() {
           <div className="sec-head pad">
             <div className="sec-num">§04</div>
             <div className="sec-title">training</div>
-            <div className="sec-meta">taught by people<br />who teach for a living</div>
+            <div className="sec-meta">trainers who<br />teach at university</div>
           </div>
           <div className="teach">
             <div className="teach__l rv">
               <p>
-                <b>Our trainers are university lecturers, not slide readers.</b> We teach web
-                programming and software engineering at the University of Bamenda and the
-                Experiential Higher Institute of Science and Technology.
+                <b>Our trainers are university lecturers.</b> They teach web programming and
+                software engineering at the University of Bamenda and the Experiential Higher
+                Institute of Science and Technology.
               </p>
               <p style={{ marginTop: 18 }}>
-                We bring that classroom experience to AI training: practical sessions built around
-                your team&apos;s real tasks, so people walk out using AI tools the same week.
+                We use that teaching experience in our AI training: short, hands-on sessions
+                built on your team&apos;s own work.
               </p>
             </div>
             <div className="teach__r rv">
@@ -165,7 +164,7 @@ export default function Home() {
               </div>
               <div className="tline">
                 <div className="n">03 / FOLLOW UP</div>
-                <div className="b">Support while the habits stick</div>
+                <div className="b">Follow-up support after the training</div>
                 <div className="s">Q&amp;A · materials · refreshers</div>
               </div>
             </div>
@@ -184,8 +183,8 @@ export default function Home() {
               <em>BUILD</em> IT.
             </h2>
             <p className="contact__sub">
-              Got a project to build, a process to automate, or a team to train in AI? Tell us
-              what you need. The fastest path is email, and we reply quickly.
+              Need an AI tool, an app, or AI training for your team? Email us a short
+              description of what you need and we will reply within 24 hours.
             </p>
             <div className="contact__grid">
               <div className="cline">
@@ -218,7 +217,7 @@ export default function Home() {
 
         <div className="foot">
           <div>
-            © 2026 <b>NDJOCKCODES</b> — AI SOLUTIONS · AI TRAINING · SOFTWARE
+            © 2026 <b>NDJOCKCODES</b> · AI SOLUTIONS · AI TRAINING · SOFTWARE
           </div>
           <div>
             YAOUNDÉ · CM &nbsp;//&nbsp; <a href="#top">↑ BACK TO TOP</a>

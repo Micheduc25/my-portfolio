@@ -37,7 +37,7 @@ export default function StatusLine() {
   return (
     <div className="status">
       <div className="status__l">
-        <span className="dot">●</span> <span>NDJOCKCODES</span> — AI SOLUTIONS / AI TRAINING
+        <span className="dot">●</span> <span>NDJOCKCODES</span> · AI SOLUTIONS / AI TRAINING
       </div>
       <div className="status__r">
         <span className="status__seg">YAOUNDÉ · CM · 3.85°N</span>

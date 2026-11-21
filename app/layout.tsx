@@ -20,7 +20,7 @@ const SITE = "https://micheduc25.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "NdjockCodes — AI Solutions, AI Training & Software",
+  title: "NdjockCodes | AI Solutions, AI Training & Software",
   description:
     "NdjockCodes builds AI-driven solutions and web & mobile software, and trains teams to use AI. Based in Yaoundé, Cameroon, working remote or on-site.",
   keywords: [
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE,
-    title: "NdjockCodes — AI Solutions, AI Training & Software",
+    title: "NdjockCodes | AI Solutions, AI Training & Software",
     description:
       "AI-driven solutions, AI training for teams, and full web & mobile development.",
     siteName: "NdjockCodes",
   },
   twitter: {
     card: "summary",
-    title: "NdjockCodes — AI Solutions, AI Training & Software",
+    title: "NdjockCodes | AI Solutions, AI Training & Software",
     description:
       "AI-driven solutions, AI training for teams, and full web & mobile development.",
   },

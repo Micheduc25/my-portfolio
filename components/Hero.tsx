@@ -39,9 +39,8 @@ export default function Hero() {
         </span>
       </h1>
       <p className="hero__sub">
-        We build <b>AI-driven solutions</b> and train teams to use AI with confidence. From
-        automation and AI assistants to full web &amp; mobile products, shipped from first commit
-        to production.
+        We build <b>AI tools and software</b> for businesses, and we train teams to use AI in
+        their daily work. Based in Yaoundé, working on-site or remotely.
       </p>
       <div className="hero__grid">
         <div className="hero__cell">
@@ -69,7 +68,7 @@ export default function Hero() {
           → Start a project
         </a>
       </div>
-      <div className="scrollhint">[ SCROLL / PRESS 1–5 ] ↓</div>
+      <div className="scrollhint">[ SCROLL / PRESS 1-5 ] ↓</div>
     </section>
   );
 }
