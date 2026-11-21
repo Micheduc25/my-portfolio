@@ -115,6 +115,17 @@ section{position:relative;border-bottom:1px solid var(--line)}
 .creed b{color:var(--accent);font-weight:700}
 @media(max-width:760px){.dual{grid-template-columns:1fr}.dual__col:first-child{border-right:0;border-bottom:1px solid var(--line)}}
 
+.svc{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+.svc__card{padding:40px clamp(16px,4vw,56px) 44px;border-bottom:1px solid var(--line);transition:.12s}
+.svc__card:nth-child(odd){border-right:1px solid var(--line)}
+.svc__card:nth-last-child(-n+2){border-bottom:0}
+.svc__card:hover{background:var(--bg-2)}
+.svc__card h3{font-family:var(--disp);font-size:clamp(22px,3vw,32px);font-weight:700;letter-spacing:-.01em;margin-bottom:16px;line-height:1.05}
+.svc__card p{font-family:var(--disp);font-size:16.5px;color:#cbc8c0;line-height:1.6;max-width:46ch}
+.svc__card ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.svc__card li .x{color:var(--accent);margin-right:8px}
+@media(max-width:760px){.svc{grid-template-columns:1fr}.svc__card:nth-child(odd){border-right:0}.svc__card:nth-last-child(2){border-bottom:1px solid var(--line)}}
+
 .stack__row{display:grid;grid-template-columns:200px 1fr;border-bottom:1px solid var(--line);transition:.12s}
 .stack__row:hover{background:var(--bg-2)}
 .stack__k{padding:20px clamp(16px,4vw,56px);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;border-right:1px solid var(--line);display:flex;align-items:center}

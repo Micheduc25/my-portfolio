@@ -1,7 +1,8 @@
-# Ndjock Michel Junior — Portfolio (v2)
+# NdjockCodes — Company Site
 
-A complete rebuild of [micheduc25.vercel.app](https://micheduc25.vercel.app) — a bold,
-brutalist / terminal-inspired portfolio for a senior full-stack engineer and educator.
+The [micheduc25.vercel.app](https://micheduc25.vercel.app) site for **NdjockCodes**, an AI &
+software studio: AI-driven solutions, AI training, web & mobile development and AI consulting.
+A bold, brutalist / terminal-inspired design.
 No templates, no AI-website clichés: monospace system UI, a live status line, a ledger
 grid, color-inverting hover states, and oversized display type.
 
@@ -41,7 +42,7 @@ No environment variables required.
 ```
 app/
   layout.tsx        fonts, metadata (OG/Twitter cards), <html> shell
-  page.tsx          page assembly + static sections (whoami, stack, teaching, contact)
+  page.tsx          page assembly + static sections (services, capabilities, training, contact)
   globals.css       full design system
 components/
   StatusLine.tsx    live WAT clock + current-section tracker (client)
@@ -52,14 +53,13 @@ lib/
   projects.ts       single source of truth for the work grid
 public/
   images/           project screenshots, client logos, favicon
-  assets/resume.pdf
 ```
 
 ## Editing content
 
 - **Projects** — edit `lib/projects.ts`. Add an object, drop a screenshot in
   `public/images`, done.
-- **Stack / teaching / bio** — edit the arrays and JSX in `app/page.tsx`.
+- **Services / capabilities / training** — edit the `SERVICES` and `STACK` arrays and JSX in `app/page.tsx`.
 - **Identity / clock location** — `components/StatusLine.tsx`.
 - **Colors / type / spacing** — CSS variables at the top of `app/globals.css`.
 
@@ -71,6 +71,6 @@ public/
 
 ## Notes
 
-- `preview.html` at the project root is a single-file static mirror of the design —
-  double-click to view the look without installing anything.
-- Replace `public/assets/resume.pdf` with your latest résumé before shipping.
+- `preview.html` at the project root is a static mirror of the old personal-portfolio design;
+  it does not reflect the company site.
+- `public/images/me.jpg` and `public/assets/resume.pdf` are no longer referenced by the site.

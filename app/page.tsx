@@ -4,16 +4,48 @@ import Work from "@/components/Work";
 import Effects from "@/components/Effects";
 
 const TICKER = [
-  "JAVASCRIPT", "TYPESCRIPT", "REACT", "NEXT.JS", "VUE", "FLUTTER", "DART",
-  "PYTHON", "DJANGO", "NODE", "FIREBASE", "TEACHING",
+  "AI SOLUTIONS", "AI TRAINING", "AUTOMATION", "LLM INTEGRATION", "WEB", "MOBILE",
+  "NEXT.JS", "FLUTTER", "PYTHON", "CONSULTING",
+];
+
+const SERVICES: { tag: string; title: string; body: string; points: string[] }[] = [
+  {
+    tag: "[ 01 / AI SOLUTIONS ]",
+    title: "AI-driven products and automation.",
+    body:
+      "We design and build software with AI at its core: assistants that know your business, document and data processing, and workflows that run themselves.",
+    points: ["Custom AI assistants & chatbots", "Document & data extraction", "Workflow automation", "LLM integration into existing apps"],
+  },
+  {
+    tag: "[ 02 / AI TRAINING ]",
+    title: "Teams that know how to use AI.",
+    body:
+      "Hands-on training for companies, institutions and developer teams. People leave able to use AI tools safely and productively in their daily work, not just talk about them.",
+    points: ["AI for professionals & executives", "AI for developers", "Prompting & tool workflows", "On-site or remote sessions"],
+  },
+  {
+    tag: "[ 03 / SOFTWARE ]",
+    title: "Web and mobile, design to deploy.",
+    body:
+      "Full-stack product development: landing pages, dashboards, e-commerce and real-time apps on the web, Flutter apps on mobile.",
+    points: ["Web apps & websites", "Mobile apps (Android / iOS)", "APIs & backends", "Maintenance & hosting"],
+  },
+  {
+    tag: "[ 04 / CONSULTING ]",
+    title: "Know where AI pays off.",
+    body:
+      "Before you build, we help you find the processes where AI saves real time or money, and plan a rollout your team can actually adopt.",
+    points: ["AI readiness assessment", "Use-case discovery", "Tool & vendor selection", "Rollout roadmap"],
+  },
 ];
 
 const STACK: { k: string; v: string[] }[] = [
+  { k: "AI / LLMs", v: ["Claude", "OpenAI", "RAG pipelines", "AI agents", "Prompt engineering"] },
   { k: "Languages", v: ["JavaScript", "TypeScript", "Dart", "Python"] },
   { k: "Web / Frontend", v: ["React", "Next.js", "Vue 3", "Tailwind", "Three.js"] },
   { k: "Mobile", v: ["Flutter", "Dart"] },
   { k: "Backend / Data", v: ["Node / Express", "Django", "Firebase", "SQLite", "REST APIs"] },
-  { k: "Tools / Craft", v: ["Git", "Figma", "WordPress", "Vercel", "Teaching & mentoring"] },
+  { k: "Tools / Delivery", v: ["Git", "Figma", "WordPress", "Vercel"] },
 ];
 
 export default function Home() {
@@ -24,13 +56,13 @@ export default function Home() {
       <nav className="nav">
         <div className="nav__in">
           <a href="#top" className="brand">
-            NMJ<span className="sq">_</span>
+            NDJOCKCODES<span className="sq">_</span>
           </a>
           <div className="menu">
-            <a href="#whoami"><span className="k">01</span><span className="lbl">WHOAMI</span></a>
-            <a href="#stack"><span className="k">02</span><span className="lbl">STACK</span></a>
+            <a href="#services"><span className="k">01</span><span className="lbl">SERVICES</span></a>
+            <a href="#capabilities"><span className="k">02</span><span className="lbl">CAPABILITIES</span></a>
             <a href="#work"><span className="k">03</span><span className="lbl">WORK</span></a>
-            <a href="#teaching"><span className="k">04</span><span className="lbl">TEACH</span></a>
+            <a href="#training"><span className="k">04</span><span className="lbl">TRAINING</span></a>
             <a href="#contact" className="menu__cta"><span className="k">05</span><span className="lbl">CONTACT</span></a>
           </div>
         </div>
@@ -50,49 +82,40 @@ export default function Home() {
           </div>
         </div>
 
-        <section id="whoami" data-sec="01">
+        <section id="services" data-sec="01">
           <div className="sec-head pad">
             <div className="sec-num">§01</div>
-            <div className="sec-title">whoami</div>
-            <div className="sec-meta">cat /etc/identity<br />2 roles · 1 instinct</div>
+            <div className="sec-title">services</div>
+            <div className="sec-meta">ls ./services<br />4 ways we help</div>
           </div>
-          <div className="dual">
-            <div className="dual__col rv">
-              <span className="dual__tag">[ ENGINEER ]</span>
-              <h3>Ships products, not demos.</h3>
-              <p>
-                A track record of turning vague ideas into working web and mobile software. Landing
-                pages, dashboards, e-commerce, real-time apps — front to back, design to deploy.
-              </p>
-              <p>
-                Comfortable owning the whole stack: React/Next and Vue on the web, Flutter on
-                mobile, Node and Django on the server.
-              </p>
-            </div>
-            <div className="dual__col rv">
-              <span className="dual__tag">[ EDUCATOR ]</span>
-              <h3>Teaches the next ones.</h3>
-              <p>
-                Lectures web programming and software engineering at the University of Bamenda and
-                the Experiential Higher Institute of Science and Technology.
-              </p>
-              <p>
-                Mentoring sharpens the craft — explaining a thing forces you to actually understand
-                it. That clarity ships back into the code.
-              </p>
-            </div>
+          <div className="svc">
+            {SERVICES.map((s) => (
+              <div className="svc__card rv" key={s.tag}>
+                <span className="dual__tag">{s.tag}</span>
+                <h3>{s.title}</h3>
+                <p>{s.body}</p>
+                <ul>
+                  {s.points.map((pt) => (
+                    <li key={pt}>
+                      <span className="x">›</span>
+                      {pt}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
           <div className="creed rv">
-            I write code for a living and teach it for love — <b>the same instinct, two outputs</b>.
-            One makes the product; the other makes the people who&apos;ll outbuild me.
+            We build AI into software and teach people to work with it.{" "}
+            <b>The technology only pays off when your team can use it.</b>
           </div>
         </section>
 
-        <section id="stack" data-sec="02">
+        <section id="capabilities" data-sec="02">
           <div className="sec-head pad">
             <div className="sec-num">§02</div>
-            <div className="sec-title">stack</div>
-            <div className="sec-meta">no skill-bars.<br />just what I ship with</div>
+            <div className="sec-title">capabilities</div>
+            <div className="sec-meta">no buzzword bingo.<br />just what we ship with</div>
           </div>
           {STACK.map((row) => (
             <div className="stack__row rv" key={row.k}>
@@ -111,40 +134,39 @@ export default function Home() {
 
         <Work />
 
-        <section id="teaching" data-sec="04">
+        <section id="training" data-sec="04">
           <div className="sec-head pad">
             <div className="sec-num">§04</div>
-            <div className="sec-title">teaching</div>
-            <div className="sec-meta">the differentiator<br />most devs don&apos;t have</div>
+            <div className="sec-title">training</div>
+            <div className="sec-meta">taught by people<br />who teach for a living</div>
           </div>
           <div className="teach">
             <div className="teach__l rv">
               <p>
-                <b>I don&apos;t just write code — I make other developers.</b> Across two
-                institutions I teach web programming and software engineering, translating
-                production reality into something a room of students can actually use.
+                <b>Our trainers are university lecturers, not slide readers.</b> We teach web
+                programming and software engineering at the University of Bamenda and the
+                Experiential Higher Institute of Science and Technology.
               </p>
               <p style={{ marginTop: 18 }}>
-                That feedback loop is my edge: an engineer who can lead, document, onboard and lift a
-                team, not only push commits. The clearest engineers are the ones who&apos;ve had to
-                teach.
+                We bring that classroom experience to AI training: practical sessions built around
+                your team&apos;s real tasks, so people walk out using AI tools the same week.
               </p>
             </div>
             <div className="teach__r rv">
               <div className="tline">
-                <div className="n">01 / INSTITUTION</div>
-                <div className="b">University of Bamenda</div>
-                <div className="s">Web programming · software engineering</div>
+                <div className="n">01 / ASSESS</div>
+                <div className="b">We map your team&apos;s level and goals</div>
+                <div className="s">Short call · skills survey</div>
               </div>
               <div className="tline">
-                <div className="n">02 / INSTITUTION</div>
-                <div className="b">Exp. Higher Institute of Science and Technology</div>
-                <div className="s">Software engineering · mentoring</div>
+                <div className="n">02 / TRAIN</div>
+                <div className="b">Hands-on sessions on real work</div>
+                <div className="s">On-site in Cameroon or remote</div>
               </div>
               <div className="tline">
-                <div className="n">03 / FOCUS</div>
-                <div className="b">Mentoring young developers</div>
-                <div className="s">From first function to first job</div>
+                <div className="n">03 / FOLLOW UP</div>
+                <div className="b">Support while the habits stick</div>
+                <div className="s">Q&amp;A · materials · refreshers</div>
               </div>
             </div>
           </div>
@@ -154,7 +176,7 @@ export default function Home() {
           <div className="sec-head pad">
             <div className="sec-num">§05</div>
             <div className="sec-title">contact</div>
-            <div className="sec-meta">./reach_out.sh<br />response &lt; 24h</div>
+            <div className="sec-meta">./start_project.sh<br />response &lt; 24h</div>
           </div>
           <div className="contact pad">
             <h2>
@@ -162,18 +184,18 @@ export default function Home() {
               <em>BUILD</em> IT.
             </h2>
             <p className="contact__sub">
-              Got a role to fill, a product to ship, or need a guest lecturer / mentor? The fastest
-              path is email — I reply quickly.
+              Got a project to build, a process to automate, or a team to train in AI? Tell us
+              what you need. The fastest path is email, and we reply quickly.
             </p>
             <div className="contact__grid">
               <div className="cline">
                 <div className="lbl">Email</div>
-                <a href="mailto:ndjockjunior@gmail.com">ndjockjunior@gmail.com</a>
+                <a href="mailto:contact@ndjockcodes.com">contact@ndjockcodes.com</a>
               </div>
               <div className="cline">
                 <div className="lbl">Status</div>
                 <span className="v" style={{ color: "var(--accent)" }}>
-                  ● Open to new roles — remote or on-site
+                  ● Accepting new projects
                 </span>
               </div>
               <div className="cline">
@@ -196,7 +218,7 @@ export default function Home() {
 
         <div className="foot">
           <div>
-            © 2026 <b>NDJOCK MICHEL JUNIOR</b> — HANDCODED, NO TEMPLATES
+            © 2026 <b>NDJOCKCODES</b> — AI SOLUTIONS · AI TRAINING · SOFTWARE
           </div>
           <div>
             YAOUNDÉ · CM &nbsp;//&nbsp; <a href="#top">↑ BACK TO TOP</a>

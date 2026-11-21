@@ -4,10 +4,10 @@ import { useEffect } from "react";
 
 const MAP: Record<string, string> = {
   "0": "#top",
-  "1": "#whoami",
-  "2": "#stack",
+  "1": "#services",
+  "2": "#capabilities",
   "3": "#work",
-  "4": "#teaching",
+  "4": "#training",
   "5": "#contact",
 };
 
